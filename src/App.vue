@@ -35,12 +35,12 @@ export default {
     handleSearch(query) {
       this.gifs = [];
       this.isLoading = true;
-      const url = (`http://api.giphy.com/v1/gifs/search?q=${query}&api_key=sdjbcCwbsIcxcjSAJGlUOpH5mdfJWVrV`)
+      const url = (`https://api.giphy.com/v1/gifs/search?q=${query}&api_key=sdjbcCwbsIcxcjSAJGlUOpH5mdfJWVrV`)
       this.doQuery(url)
   }
 },
   created() {
-    const url = ('http://api.giphy.com/v1/gifs/trending?api_key=sdjbcCwbsIcxcjSAJGlUOpH5mdfJWVrV')
+    const url = ('https://api.giphy.com/v1/gifs/trending?api_key=sdjbcCwbsIcxcjSAJGlUOpH5mdfJWVrV')
     this.doQuery(url)
   }
 }
